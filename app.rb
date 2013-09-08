@@ -30,6 +30,8 @@ class App < Sinatra::Base
     css_compression :sass   # :simple | :sass | :yui | :sqwish
 
     prebuild true
+
+    asset_hosts [ ENV['CDN_SUMO_URL'] ] if ENV['CDN_SUMO_URL']
   end
 
   get '/' do
