@@ -1,8 +1,10 @@
 require 'rubygems'
-require 'sinatra'
+require 'sinatra/base'
 
-set :root, File.dirname(__FILE__)
+class App < Sinatra::Base
+  set :root, File.dirname(__FILE__)
 
-get '/' do
-  erb :index
+  get '/' do
+    erb :index
+  end
 end
