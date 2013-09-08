@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'sinatra/base'
+require 'sass'
 require 'sinatra/assetpack'
 
 class App < Sinatra::Base
@@ -26,7 +27,7 @@ class App < Sinatra::Base
     ]
 
     js_compression  :uglify # :jsmin | :yui | :closure | :uglify
-    css_compression :yui    # :simple | :sass | :yui | :sqwish
+    css_compression :sass   # :simple | :sass | :yui | :sqwish
 
     prebuild true
   end
