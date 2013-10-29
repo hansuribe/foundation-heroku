@@ -1,7 +1,15 @@
 A small, quick app using foundation and sintra to get static ruby-based sites
 live on Heroku.
 
-# Setup a new repo & heroku for your site
+## Before launch
+
+  1. create a 152x152 favicon in assets
+  2. create a 144x144 windows tile in assets
+  3. choose a background colour for tile
+  4. create 32 and 16 favicons in /public
+  4. add analytics
+
+## Setup a new repo & heroku for your site
 
 Assuming you have the heroku toolbelt installed.
 
